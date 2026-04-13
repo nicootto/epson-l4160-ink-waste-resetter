@@ -1,4 +1,4 @@
-FROM python:3.7.5
+FROM python:3.7-bullseye
 
 RUN apt update
 RUN apt install libsnmp-dev  -y
@@ -9,5 +9,5 @@ COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
-ENTRYPOINT python resetter.py
+ENTRYPOINT ["python", "resetter.py"]
 
