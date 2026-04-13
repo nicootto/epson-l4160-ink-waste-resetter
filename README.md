@@ -3,6 +3,10 @@
 This python script resets the ink waste counter of the printer Epson L4160.
 It uses [Easy SNMP](https://easysnmp.readthedocs.io/en/latest/) which might be tricky to install, therefore also is included a Dockerfile to build an image with all dependencies.
 
+> [!NOTE]
+> This script only resets the waste ink counter for the **Epson L4160**. The OIDs are model-specific and won't work on other printers. For other models, check out [epson_print_conf](https://github.com/Ircama/epson_print_conf) — it supports hundreds of Epson models, can auto-detect unknown printers, and has both a GUI and CLI. [epson-printer-snmp](https://github.com/Zedeldi/epson-printer-snmp) is another lighter alternative with support for many models.
+
+
 ## How to use it
 To use this script the printer must be connected over Wi-Fi. 
 
